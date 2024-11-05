@@ -2,26 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.guiss;
+package com.mycompany.myjframe;
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-/**
- *
- * @author efcru
- */
-
+import java.awt.FlowLayout;
 
 public class MyJFrame extends JFrame {
     private JLabel myLabel;
 
     public MyJFrame() {
-        myLabel = new JLabel();
-        myLabel.setText("Hola Mundo");
-        add(myLabel);
-        
-        setTitle("Mi Ventana");
+        setTitle("Hola Mundo JFrame");
         setSize(300, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new FlowLayout());
+        myLabel = new JLabel("Hola Mundo");
+        add(myLabel);
         setVisible(true);
     }
 
@@ -30,3 +26,4 @@ public class MyJFrame extends JFrame {
     }
 }
 
+//Oscar Raymundo Fragoso Mayén

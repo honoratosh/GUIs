@@ -11,7 +11,7 @@ public class MyJFrame extends JFrame {
         myLabel = new JLabel("Hola Mundo");
         add(myLabel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(300, 200);
+        setSize(640, 480);
         setLocationRelativeTo(null); 
     }
     

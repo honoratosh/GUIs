@@ -1,32 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+package com.clase051124;
 
-package com.mycompany.guiss;
+
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
+
 /**
- *
- * @author efcru
+ * 
+ * @author Ambriz Cano Diego Emilio
  */
-
-
-public class MyJFrame extends JFrame {
+public class Clase051124 extends JFrame {
     private JLabel myLabel;
 
-    public MyJFrame() {
+    public Clase051124() {
+   
         myLabel = new JLabel();
         myLabel.setText("Hola Mundo");
+
         add(myLabel);
-        
-        setTitle("Mi Ventana");
+
+        setTitle("Mi JFrame");
         setSize(300, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
+        setLocationRelativeTo(null); 
     }
 
     public static void main(String[] args) {
-        new MyJFrame();
+        Clase051124 frame = new Clase051124();
+        frame.setVisible(true);
     }
 }
-
