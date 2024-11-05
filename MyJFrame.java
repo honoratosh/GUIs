@@ -1,22 +1,34 @@
-package com.mycompany.myjframe;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.my.company.jframe;
 
+/**
+ *
+ * @author daniela
+ */
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.SwingConstants;
 
 public class MyJFrame extends JFrame {
+    private JLabel myLabel;
+
     public MyJFrame() {
-        setTitle("Ventana de Ejemplo");
-        setSize(500, 250);
+        // Configuración de la ventana
+        setTitle("Mi Ventana");
+        setSize(250, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        JLabel etiqueta = new JLabel("Hola Mundo", SwingConstants.CENTER);
-
-        add(etiqueta);
+        
+        // Configuración de la etiqueta
+        myLabel = new JLabel("   Hola Mundo");
+        add(myLabel);
+        
+        // Mostrar la ventana
+        setVisible(true);
     }
 
     public static void main(String[] args) {
-        MyJFrame ventana = new MyJFrame();
-        ventana.setVisible(true);
+        new MyJFrame();
     }
 }
