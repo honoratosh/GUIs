@@ -2,19 +2,22 @@ package com.mycompany.myjframe;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+import java.awt.BorderLayout;
 
 public class MyJFrame extends JFrame {
     private JLabel myLabel;
 
     public MyJFrame() {
         setTitle("Hello World ");
-        myLabel = new JLabel("Hola Mundo");
-        add(myLabel);
+        myLabel = new JLabel("Hola Mundo", SwingConstants.CENTER);
+        setLayout(new BorderLayout());
+        add(myLabel, BorderLayout.CENTER);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(640, 480);
         setLocationRelativeTo(null); 
     }
-    
+
     public static void main(String[] args) {
         MyJFrame frame = new MyJFrame();
         frame.setVisible(true);
