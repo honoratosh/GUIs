@@ -1,15 +1,20 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class MyJFrame {
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("Mi Ventana");
-        frame.setSize(300, 200);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLocationRelativeTo(null);
+public class MyJFrame extends JFrame {
+    private JLabel myLabel;
 
-        JLabel myLabel = new JLabel("Hola Mundo");
-        frame.add(myLabel);
+    public MyJFrame() {
+        setTitle("Mi JFrame");
+        setSize(300, 200);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        myLabel = new JLabel("Hola Mundoooo:')");
+        add(myLabel); 
+    }
+
+    public static void main(String[] args) {
+        MyJFrame frame = new MyJFrame();
         frame.setVisible(true);
     }
 }
