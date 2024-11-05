@@ -10,10 +10,10 @@ import javax.swing.JLabel;
  * 
  * @author Ambriz Cano Diego Emilio
  */
-public class Clase051124 extends JFrame {
+public class myJFrame extends JFrame {
     private JLabel myLabel;
 
-    public Clase051124() {
+    public myJFrame() {
    
         myLabel = new JLabel();
         myLabel.setText("Hola Mundo");
@@ -27,7 +27,7 @@ public class Clase051124 extends JFrame {
     }
 
     public static void main(String[] args) {
-        Clase051124 frame = new Clase051124();
+        myJFrame frame = new myJFrame();
         frame.setVisible(true);
     }
 }
