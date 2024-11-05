@@ -1,29 +1,31 @@
-package com.mycompany.myjframe;
+
+package com.mycompany.mavenproject19;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import java.awt.FlowLayout;
 
 public class MyJFrame extends JFrame {
     private JLabel myLabel;
 
     public MyJFrame() {
-        setTitle("Hola Mundo JFrame");
-        setSize(300, 200);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    
+        myLabel = new JLabel();
+        myLabel.setText("Hola Mundo");
 
-        setLayout(new FlowLayout());
-
-        myLabel = new JLabel("Hola Mundo");
-        
+      
         add(myLabel);
 
-        // Hacer visible el JFrame
-        setVisible(true);
+      
+        setTitle("Mi JFrame");
+        setSize(300, 200);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null); 
     }
 
     public static void main(String[] args) {
-        // Crear una instancia de MyJFrame para mostrar la ventana
-        new MyJFrame();
+      
+        MyJFrame frame = new MyJFrame();
+        frame.setVisible(true);
     }
 }
+
