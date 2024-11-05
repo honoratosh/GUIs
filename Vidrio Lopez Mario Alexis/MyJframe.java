@@ -5,12 +5,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MyJFrame extends JFrame {
+public class MyJframe extends JFrame {
     private JLabel myLabel;
     private JTextField inputField;
     private JButton submitButton;
 
-    public MyJFrame() {
+    public MyJframe() {
         setTitle("Ejemplo de Entrada de Número");
         setSize(400, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
